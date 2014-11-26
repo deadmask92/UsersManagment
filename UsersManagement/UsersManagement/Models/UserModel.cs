@@ -2,18 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.ComponentModel.DataAnnotations;
 
 namespace UsersManagement.Models
 {
-    public class LoginForm
+    public class UserModel
     {
+        public string Cognome { get; set; }
 
-        [Required(ErrorMessage="Please enter username!")]
+        public string Nome { get; set; }
+
+        public string Email { get; set; }
+
         public string Username { get; set; }
 
-        [Required(ErrorMessage="Please enter password!")]
         public string Password { get; set; }
-
     }
 }
